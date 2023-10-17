@@ -1,15 +1,15 @@
-# First need to install and import all packages
+# Import required packages
 import qpcr
 import csv
 
 
-# Need to set up which files are the samples (assay) and which is the housekeeping gene (normaliser)
+# Set up which files are the samples and which is the housekeeping gene 
 assay_files = [r"C:\Users\xlloui\Documents\12S.xlsx"]
 normaliser_files = [r"C:\Users\xlloui\Documents\18S.xlsx"]
 
+# Put the xls files in a string variable
 assays = qpcr.read(assay_files)
 normalisers = qpcr.read(normaliser_files)
-assays[0]
 
 reader = qpcr.DataReader()
 
@@ -30,7 +30,7 @@ fig = results.preview()
 # To save the datas to a new csv file
 input_variable = [results]
  
-# Example.csv gets created in the current working directory
+# A new file .csv gets created in the current working directory
 with open ('12SddCT18S.csv','w',newline = '') as csvfile:
     my_writer = csv.writer(csvfile, delimiter = ' ')
     my_writer.writerows(input_variable)
