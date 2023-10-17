@@ -1,6 +1,13 @@
 # Project-python-course
 
-A code for calculating ddCT from raw CT files.
+A python code for calculating ddCT from raw CT files.
 
-Few packages are needed :
-qpcr, pandas, numpy
+Install required packages first.
+
+The qpcr package https://github.com/NoahHenrikKleinschmidt/qpcr/tree/main is needed.
+
+Install it via pip
+```
+pip install qpcr
+```
+
