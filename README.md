@@ -20,3 +20,6 @@ CTs values are obtain from the qPCR machine directly. It's the number of cycle t
 dCTs are obtain by doing the normalisation between your treated CT and the control CT.
 
 ddCTs are obtain by doing the normalisation between the dCT of your sample and the dCT of your housekeeping gene.
+
+
+You should be able to run this code using the different examples datas, and always using 18S as the housekeeping gene.
