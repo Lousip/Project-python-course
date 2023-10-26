@@ -4,9 +4,12 @@ A python code for calculating ddCT from raw CT files.
 
 Install required packages first.
 
-The qpcr package https://github.com/NoahHenrikKleinschmidt/qpcr/tree/main is needed. To install it, use pip
+The qpcr package https://github.com/NoahHenrikKleinschmidt/qpcr/tree/main is needed. To install it, use pip. You should also have installed the packages mentioned in the requirements, like openpyxl.
 ```
 pip install qpcr
+```
+```
+pip install openpyxl
 ```
 
 This code will take qPCR CTs stored in .xls files and normalized them to get the ddCT values (normalized fold change) and store it in a new .csv file
