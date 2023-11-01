@@ -19,7 +19,9 @@ You should be able to run this code using the different examples datas, and alwa
 
 
 
-## **How to run:**
+## **How to start:**
+
+Dowload the PPPcr.py file
 
 First you need to set up your files pathways
 
@@ -28,51 +30,10 @@ assay_files = [r"C:\Users\your_file_assay"]
 normaliser_files = [r"C:\Users\your_file_normaliser"]
 ```
 
-Then you need to put your file in a string
-```
-assays = qpcr.read(assay_files)
-normalisers = qpcr.read(normaliser_files)
-```
 
-To be able to read the variable with the qpcr package : 
-```
-reader = qpcr.DataReader()
-
-assays = reader.read(assay_files)
-normalisers = reader.read(normaliser_files)
-```
-
-To calculate the delta CT of the ass
-```
-assays = qpcr.delta_ct(assays)
-normalisers = qpcr.delta_ct(normalisers)
-```
-
-Now that you have your delta CT you need the deltadeltaCT which is the normalisation of your assay to the normaliser
-```
-results = qpcr.normalise(assays, normalisers)
-```
-
-The qpcr package allows to plot the ddCT values
-```
-fig = results.preview()
-```
-Using 12S as assay and 18S as normaliser you should have this figure
+If you run using 12S as assay and 18S as normaliser you should have this figure
 ![image](https://github.com/Lousip/Project-python-course-LL/assets/144322022/6b532969-8cad-4ca9-bfe2-86678293ce06)
 
-
-Finally you want to export your data in a new .txt file
-Enter the names of your assay and normaliser
-```
-nameassay = input("name gene assay: ")
-namenorm = input("name gene normaliser: ")
-```
-Export in csv
-```
-results_csv = [results]
-
-name.csv = namearrays + "ddct" + namenorm + ".csv"
-with open (name.csv,'w',newline = '') as csvfile:
-    my_writer = csv.writer(csvfile, delimiter = ' ')
-    my_writer.writerows(results_csv)
-```
+And when you export to a csv file
+Enter the names of your assay and normaliser in the input
+You end upwith a csv file named after your assay and normaliser
