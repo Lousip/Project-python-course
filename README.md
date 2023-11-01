@@ -21,7 +21,8 @@ You should be able to run this code using the different examples datas, and alwa
 
 How to run : 
 First you need to set up your files
-'''
+
+```
 assay_files = [r"path to your file]
 normaliser_files = [r"path to your file"]
-'''
+```
