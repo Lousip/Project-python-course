@@ -58,3 +58,20 @@ fig = results.preview()
 ```
 Using 12S as assay and 18S as normaliser you should have this figure
 ![image](https://github.com/Lousip/Project-python-course-LL/assets/144322022/6b532969-8cad-4ca9-bfe2-86678293ce06)
+
+
+Finally you want to export your data in a new .txt file
+Enter the names of your assay and normaliser
+```
+nameassay = input("name gene assay: ")
+namenorm = input("name gene normaliser: ")
+```
+Export in csv
+```
+results_csv = [results]
+
+name.csv = namearrays + "ddct" + namenorm + ".csv"
+with open (name.csv,'w',newline = '') as csvfile:
+    my_writer = csv.writer(csvfile, delimiter = ' ')
+    my_writer.writerows(results_csv)
+```
