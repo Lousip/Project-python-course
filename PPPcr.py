@@ -34,8 +34,6 @@ fig = results.preview()
 
 # To save the datas to a new csv file
 results_csv = [results]
- 
-
 # A new file .csv gets created in the current working directory. New file is the normalisation of the assays 12S to the housekeeping gene 18S
 # Input names of your normaliser and assay to output name of your new file
 nameassay = input("name gene assay: ")
