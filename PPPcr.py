@@ -38,7 +38,7 @@ results_csv = [results]
 # Input names of your normaliser and assay to output name of your new file
 nameassay = input("name gene assay: ")
 namenorm = input("name gene normaliser: ")
-name.csv = namearrays + "ddct" + namenorm + ".csv"
+name.csv = nameassay + "ddct" + namenorm + ".csv"
 with open (name.csv,'w',newline = '') as csvfile:
     my_writer = csv.writer(csvfile, delimiter = ' ')
     my_writer.writerows(results_csv)
