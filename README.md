@@ -21,7 +21,7 @@ You should be able to run this code using the different examples datas, and alwa
 
 ## **How to start:**
 
-Dowload the PPPcr.py file
+Dowload the PPPcr.py file and pcrpy.yml environment
 
 First you need to set up your files pathways
 
