@@ -24,10 +24,10 @@ You should be able to run this code using the different examples datas, and alwa
 Dowload the PPPcr.py file and pcrpy.yml environment
 
 First you need to set up your files pathways
-
+You should input the names of your files like
 ```
-assay_files = [r"C:\Users\your_file_assay"]
-normaliser_files = [r"C:\Users\your_file_normaliser"]
+Name of assay file: 12S.xlsx
+Name of normaliser file: 18S.xlsx
 ```
 
 
